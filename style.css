@@ -239,3 +239,67 @@
         right: 20%;
     }
 }
+
+/* Soluzione esercizio 13 */
+.ex-13-button:hover .ex-13-top-white{
+    animation-name: top-white-animation-13;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes top-white-animation-13 {
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    25%{
+        left:90%;
+        top: -10px;
+    }
+    50%{
+        left: 90%;
+        top: 55px;
+    }
+    75%{
+        left: -10%;
+        top: 55px;
+    }
+    90%{
+        left: -10%;
+        top: -10px;
+    }    
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation-name: bottom-white-animation-13;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes bottom-white-animation-13 {
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    25%{
+        right:80%;
+        bottom: -10px;
+    }
+    50%{
+        right: 80%;
+        bottom: 55px;
+    }
+    75%{
+        right: -10%;
+        bottom: 55px;
+    }
+    90%{
+        right: -10%;
+        bottom: -10px;
+    }    
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
