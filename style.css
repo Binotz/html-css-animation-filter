@@ -149,6 +149,29 @@
 .ex-11-icon {
     font-size: 60px;
 }
+/* Soluzione esercizio 11 */
+.ex-11-icon:hover{
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    85%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 .ex-12-button, .ex-13-button {
     position: relative;
