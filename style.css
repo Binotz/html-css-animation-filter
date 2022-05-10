@@ -173,6 +173,7 @@
     }
 }
 
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -193,6 +194,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: all 1s linear;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -201,4 +203,39 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+
+/* Soluzione esercizio 12 */
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: top-white-animation-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes top-white-animation-12 {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: bottom-white-animation-12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes bottom-white-animation-12 {
+    0%{
+        right: 20%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 20%;
+    }
 }
